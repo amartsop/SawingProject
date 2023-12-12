@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- Needle tissue simulator -->
+    <include file="$(find needle_tissue_simulator)/launch/needle_tissue_simulator.launch" />
+
+    <!-- Needle physics -->
+    <include file="$(find needle_physics)/launch/needle_physics.launch" />
+
+</launch>
+

@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="needle_tissue_simulator" name="needle_tissue_simulator" type="needle_tissue_simulator_node"/>
+
+</launch>
