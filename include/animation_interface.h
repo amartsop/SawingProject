@@ -19,8 +19,8 @@
 #include <primitives/box.h>
 
 #include "utils.h"
-// #include <user_interface.h>
-// #include <world_interface.h>
+#include <user_interface.h>
+#include <world_interface.h>
 // #include <igl/readOBJ.h>
 
 
@@ -36,9 +36,9 @@ public:
     // Update objects
     void update(double real_time);
 
-    // // Set world interface
-    // inline void set_world_interface(std::shared_ptr<WorldInterface>&
-    //     world_interface) { m_world_interface = world_interface; }
+    // Set world interface
+    inline void set_world_interface(std::shared_ptr<WorldInterface>&
+        world_interface) { m_world_interface = world_interface; }
 
 private:
     /************************** Objects *******************/
@@ -88,6 +88,9 @@ private:
     // Generate target object
     void generate_target_object(void);
 
+    // Update target object
+    void update_target_object(void);
+
     // Target object id
     int m_target_object_id;
 
@@ -99,8 +102,7 @@ private:
     std::filesystem::path m_to_rel_texture_name =
         "objects/cadillac/cadillac.png";
 
-// private:
-//     // World interface pointer
-//     std::shared_ptr<WorldInterface> m_world_interface;
-
+private:
+    // World interface pointer
+    std::shared_ptr<WorldInterface> m_world_interface;
 };

@@ -4,6 +4,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/glm.hpp>
 #include <eigen3/Eigen/Dense>
+#include <random>
 
 class Utils
 {
@@ -24,4 +25,7 @@ public:
 
     // Eigen double vector to standard vector
     static std::vector<double> eigen_dvec_to_std_dvec(const Eigen::VectorXd& vec);
+
+    // Random double in range
+    static double random_double_in_range(double lower_lim, double upper_lim);
 };

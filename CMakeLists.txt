@@ -64,6 +64,9 @@ set(SOURCES
     ./src/user_interface.cpp
     ./src/joystick_interface.cpp
     ./src/world_interface.cpp
+    ./src/object_controller.cpp
+    ./src/utils.cpp
+    ./src/data_generator.cpp
     # ./src/video_recorder.cpp
   )
   

@@ -7,9 +7,9 @@
 #include <display.h>
 #include <scene.hpp>
 #include <animation_interface.h>
-// #include <user_interface.h>
-// #include <world_interface.h>
-// #include <joystick_interface.h>
+#include <user_interface.h>
+#include <world_interface.h>
+#include <joystick_interface.h>
 // #include <video_recorder.h>
 
 
@@ -41,16 +41,16 @@ private:
     // Display object ptr
     std::shared_ptr<Display> m_display;
 
-// private:
+private:
     
-//     /// User interface
-//     UserInterface m_gui;
+    /// User interface
+    UserInterface m_gui;
 
-//     // World interface
-//     std::shared_ptr<WorldInterface> m_world_interface;
+    // World interface
+    std::shared_ptr<WorldInterface> m_world_interface;
 
-//     // Joystick interface
-//     std::shared_ptr<JoystickInterface> m_joystick_interface;
+    // Joystick interface
+    std::shared_ptr<JoystickInterface> m_joystick_interface;
 
     // // Video recorder
     // VideoRecorder m_video_recorder;
@@ -66,14 +66,14 @@ private:
     // Animation update interval (sec)
     double m_anim_update_interval = 1.0 / 30.0;
 
-// private:
+private:
 
-//     // Update simulation
-//     void update_simulation(double real_time, double delta_time);
+    // Update simulation
+    void update_simulation(double real_time, double delta_time);
 
-//     // Simmulation previous time (sec)
-//     double m_prev_sim_time = 0.0;
+    // Simmulation previous time (sec)
+    double m_prev_sim_time = 0.0;
 
-//     // Simmulation previous time (sec)
-//     double m_sim_update_interval = 1.0 / 100.;
+    // Simmulation previous time (sec)
+    double m_sim_update_interval = 1.0 / 100.;
 };

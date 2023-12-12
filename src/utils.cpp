@@ -18,3 +18,19 @@ std::vector<double> Utils::eigen_dvec_to_std_dvec(const Eigen::VectorXd& vec)
     std::vector<double> std_vec(vec.data(), vec.data() + vec.rows() * vec.cols());
     return std_vec;
 }
+
+// Random double in range
+double Utils::random_double_in_range(double lower_lim, double upper_lim)
+{
+    // Set the seed for the random number generator
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    // Uniform real distribution
+    std::uniform_real_distribution<double> distribution(lower_lim, upper_lim);
+
+    // Generate a random double in the specified range
+    double random_value = distribution(gen);
+
+    return random_value;
+}
